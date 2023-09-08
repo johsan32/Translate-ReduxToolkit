@@ -1,0 +1,136 @@
+.container {
+  min-width: 700px;
+  width: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 7px;
+  box-shadow: 5px 10px 10px rgb(196, 196, 196);
+  z-index: 999;
+  .head {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    span {
+      color: #ffc107;
+      font-size: larger;
+    }
+  }
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+
+  .to-text {
+    border-radius: 0px;
+    border-left: 1px solid #ccc;
+  }
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #250968;
+
+  &::placeholder {
+    color: #b7b6b6;
+  }
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+  .select-title {
+    width: 150px;
+  }
+  .row {
+    .icons {
+      width: 28%;
+
+      i {
+        width: 50px;
+        color: #adadad;
+        font-size: 20px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        justify-content: center;
+      }
+    }
+
+    &.from {
+      padding-right: 15px;
+      border-right: 1px solid #ccc;
+    }
+
+    &.to {
+      padding-left: 15px;
+      border-left: 1px solid #ccc;
+    }
+
+    select {
+      color: #333;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      background: none;
+      padding-left: 3px;
+      overflow-y: hidden;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 8px;
+        border-right: 2px solid #ffffff;
+      }
+    }
+  }
+}
+
+.controls .exchange {
+  color: #250968;
+  cursor: pointer;
+  font-size: 25px;
+  transition: transform 0.2s ease;
+}
+
+.controls i:active {
+  transform: scale(0.9);
+}
+
+.container button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #ffc107;
+  z-index: 999;
+}
